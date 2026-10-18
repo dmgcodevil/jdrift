@@ -1,0 +1,17 @@
+[versions]
+kotlin = "2.1.21"
+jmc = "9.1.2"
+junit = "5.12.2"
+
+[libraries]
+sqlite = { module = "org.xerial:sqlite-jdbc", version = "3.49.1.0" }
+kotlinx-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.8.1" }
+jmc-flightrecorder = { module = "org.openjdk.jmc:flightrecorder", version.ref = "jmc" }
+jmc-rules = { module = "org.openjdk.jmc:flightrecorder.rules", version.ref = "jmc" }
+jmc-rules-jdk = { module = "org.openjdk.jmc:flightrecorder.rules.jdk", version.ref = "jmc" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-launcher = { module = "org.junit.platform:junit-platform-launcher", version = "1.12.2" }
+
+[plugins]
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
